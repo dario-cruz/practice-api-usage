@@ -1,5 +1,6 @@
 // Define the image element located in the dom.
 const imgElem = document.getElementById('random-img')
+const newImageButton = document.getElementById('re-fresh')
 
 fetchGif()
 
@@ -14,3 +15,4 @@ function fetchGif() {
         })    
 }
 
+newImageButton.addEventListener('click', fetchGif)
